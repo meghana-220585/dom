@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>manipulate html</title>
+    </head>
+    <style>
+        body{
+            background-color: rgb(166, 228, 228);
+        }
+    </style>
+    <body>
+        <p id="msg">hello world</p>
+        <button onclick="change()">click here</button>
+        <script>
+            function change(){
+                document.getElementById("msg").innerHTML="bye";
+            }
+        </script>
+    </body>
+</html>
