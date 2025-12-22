@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tasty Bites Restaurant</title>
+
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #b22222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            
+            text-decoration:underline;
+        }
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #b22222;
+        }
+        .menu-table {
+            width: 100%;
+           
+        }
+        .menu-table th, .menu-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .card img {
+            width: 100%;
+            height: 120px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            background-color: #b22222;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+<header>
+    <h1>Meghana's Restaurant</h1>
+    <p>Delicious Food, Happy Mood</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section>
+    <h2>Welcome</h2>
+    <p>Welcome to Tasty Bites Restaurant. We serve fresh and tasty food every day.</p>
+</section>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+
+    <table class="menu-table">
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Pizza</td>
+            <td>₹199</td>
+        </tr>
+        <tr>
+            <td>Burger</td>
+            <td>₹149</td>
+        </tr>
+        <tr>
+            <td>Biryani</td>
+            <td>₹249</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Popular Items</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="" alt="pizza">
+            <h3>Pizza</h3>
+            <p>₹199</p>
+        </div>
+
+        <div class="card">
+            <img src="" alt="burger">
+            <h3>Burger</h3>
+            <p>₹149</p>
+        </div>
+
+        <div class="card">
+            <img src="" alt="biryani">
+            <h3>Biryani</h3>
+            <p>₹249</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>We are a family restaurant located in Vizianagaram. Customer satisfaction is our priority.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="number" placeholder="Mobile Number">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+ <section>
+        <h2>order your food</h2>
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="enter your name" required><br>
+            <label>Mobile number</label>
+            <input type="tel" placeholder="enter your mobile number" required><br><br>
+            <label>Select food items</label><br>
+            <select>
+                <option>Pizza</option>
+                <option>Burger</option>
+                <option>Biryani</option>
+                <option>Dosa</option>
+            </select><br><br>
+            <label>Quantity</label><br>
+            <input type="number" min="1" max="10"><br><br>
+            <label>Message</label><br>
+            <textarea></textarea><br><br>
+            <button type="submit">place your order</button>
+            <button type="reset">clear</button>
+        </form>
+    </section>
+
+    <section>
+        <h2> customer Feedback</h2>
+        <form>
+            <label> Your Name</label>
+            <input type="text" placeholder="enter your name" required><br><br>
+            <label>Rate Us</label>
+            <input class="rate" type="radio">Excellent
+            <input class="rate" type="radio">Good
+            <input class="rate" type="radio">Average <br><br>
+            <label>Your Feedback</label>
+            <textarea placeholder="give your feedback"></textarea><br><br>
+            <button type="submit" >submit your feedback</button>
+        </form>
+    </section>
+
+<footer>
+    <p>&copy; 2025 Meghana's Restaurant</p>
+</footer>
+
+</body>
+</html>

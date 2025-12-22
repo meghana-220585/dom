@@ -1,0 +1,29 @@
+.t3{
+    border-color:rgb(177, 204, 228);
+    border-radius: 5px;
+    height:300px;
+    width:400px;
+    margin-left: 40px;
+    
+
+}
+.heading{
+    background-color: rgb(25, 150, 25);
+    color:white;
+}
+.rows{
+    background-color: rgb(193, 235, 193);
+    color:black;
+}
+.rows3{
+    background-color:rgb(193, 220, 221) ;
+}
+.rows3 #std{
+    background-color: aqua;
+}
+body{
+    background-color: aliceblue;
+    display:flex;
+    
+    
+}

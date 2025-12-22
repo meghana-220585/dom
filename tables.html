@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tables</title>
+    <link rel="stylesheet" href="table3.css">
+</head>
+<style>
+    .t1{
+        margin-bottom:50px;
+        height:300px;
+        width:400px;
+    }
+    .t1 table{
+        border-color: green;
+        width:400px;
+        height:400px;
+        text-align: center;
+    }
+    .t1 th{
+        background-color: brown;
+        color:white;
+    }
+   .t1 #r1c1{
+        background-color: blueviolet;
+    }
+    .t1 #r3c1{
+        background-color: aquamarine;
+        
+    }
+    .t1 td{
+        background-color: yellow;
+    }
+</style>
+<body>
+    <div>
+    <h2 align="center">internal style </h2>
+    <table class="t1" border="1">
+        <tr>
+            <th>column 1</th>
+            <th>column 2</th>
+            <th>column 3</th>
+        </tr>
+        <tr>
+            <td rowspan="2" id="r1c1">row 1 cell 1</td>
+            <td>row 2 cell 2</td>
+            <td>row 3 cell 3</td>
+        </tr>
+        <tr>
+           <td>row 2 cell 2</td>
+           <td>row 3 cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3" id="r3c1">row 3 cell 1</td>
+
+        </tr>
+    </table>
+ </div>
+ <div style="margin-bottom:50px;">
+    <h2 align="center">inline style</h2>
+    <table border="1" style="border-color:rgb(26, 24, 24);color:white;height:300px;width:400px;text-align: center;margin-left:40px;">
+        <tr style="background-color: rgb(128, 0, 107);">
+            <th>Brand</th>
+            <th>catagory</th>
+            <th>price</th>
+            <th>status</th>
+        </tr>
+        <tr style="background-color:midnightblue">
+            <td>Apple</td>
+            <td>Technology</td>
+            <td>200.00$</td>
+            <td>Available</td>
+        </tr>
+        <tr style="background-color:dodgerblue">
+            <td>Realme</td>
+            <td>Technology</td>
+            <td>200.00$</td>
+            <td>No.stock</td>
+        </tr>
+        <tr style="background-color:midnightblue;">
+            <td>Samsung</td>
+            <td>Technology</td>
+            <td>200.00$</td>
+            <td>start sale</td>
+        </tr>
+        <tr style="background-color:dodgerblue">
+            <td>Vivo</td>
+            <td>Technology</td>
+            <td>200.00$</td>
+            <td>No.stock</td>
+        </tr>
+    </table>
+</div>
+<div class="table3">
+<h2 align="center">external style</h2>
+<table border="1" class="t3">
+    <tr class="heading">
+        <th rowspan="2">Heading</th>
+        <th>Students</th>
+        <th colspan="2">Details</th>
+    </tr>
+    <tr class="heading">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Department</th>
+        
+    </tr>
+    <tr class="rows3">
+        <td rowspan="3" id="std">Student List</td>
+        <td>N220585</td>
+        <td>Meghana</td>
+        <td>Computer Science</td>
+    </tr>
+    <tr class="rows">
+         <td>N221146</td>
+        <td>Deekshitha</td>
+        <td>Electonics</td>
+    </tr>
+    <tr class="rows3">
+         <td>N220743</td>
+        <td>Dhanaraju</td>
+        <td>Civil</td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
